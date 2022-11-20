@@ -4,7 +4,7 @@
 
 
 
-if [ "$1" = "install" ]
+if [ "$1" = "install" ] || if [ "$2" = "termux" ]
 then
 curl -L https://raw.githubusercontent.com/uGeek/rccalendar/main/c -o \
                    $HOME/.local/bin/c && chmod +x $HOME/.local/bin/c
@@ -13,5 +13,13 @@ curl -L https://raw.githubusercontent.com/uGeek/rccalendar/main/.config/rccalend
                    $HOME/.config/rccalendar/personal.conf
 clear                   
 echo "Edita el archivo de configuración: $HOME/.config/rccalendar/personal.conf"
+
+###
+pkg upgrade    
+pkg install jq termux-api termux-services rclone
+mkdir -p ~/.shortcuts
+echo "bash ~/.config/rccalendar/c termux" > ~/.shortcuts/Calendario
+exit
+
 exit
 fi
