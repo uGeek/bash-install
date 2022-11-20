@@ -7,6 +7,8 @@ then
 
 mkdir -p $HOME/.local/bin
 
+echo "alias c='bash ~/.local/bin/c'" > $HOME/.bashrc
+
 curl -L https://raw.githubusercontent.com/uGeek/rccalendar/main/c -o \
                    $HOME/.local/bin/c && chmod +x $HOME/.local/bin/c
 mkdir -p $HOME/.config/rccalendar/
