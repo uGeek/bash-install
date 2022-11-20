@@ -14,7 +14,7 @@ echo "Edita el archivo de configuración: $HOME/.config/rccalendar/personal.conf
 
 ###
 pkg upgrade    
-pkg install jq termux-api termux-services rclone
+pkg install jq termux-api termux-services rclone -y
 mkdir -p ~/.shortcuts
 echo "bash ~/.config/rccalendar/c termux" > ~/.shortcuts/Calendario
 
