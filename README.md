@@ -1,6 +1,7 @@
 # bash-install
 
 
+echo "bi"
 
 
 ```
