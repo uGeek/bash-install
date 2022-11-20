@@ -11,6 +11,7 @@ curl -L https://raw.githubusercontent.com/uGeek/rccalendar/main/c -o \
 mkdir -p $HOME/.config/rccalendar/
 curl -L https://raw.githubusercontent.com/uGeek/rccalendar/main/.config/rccalendar/personal.conf -o \
                    $HOME/.config/rccalendar/personal.conf
+clear                   
 echo "Edita el archivo de configuración: $HOME/.config/rccalendar/personal.conf"
 exit
 fi
