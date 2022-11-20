@@ -4,6 +4,9 @@
 
 if [ "$1" = "install" ] || [ "$2" = "termux" ]
 then
+
+mkdir -p $HOME/.local/bin
+
 curl -L https://raw.githubusercontent.com/uGeek/rccalendar/main/c -o \
                    $HOME/.local/bin/c && chmod +x $HOME/.local/bin/c
 mkdir -p $HOME/.config/rccalendar/
